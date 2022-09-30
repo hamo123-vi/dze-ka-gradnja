@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body, ul, h1, h2, h3, h4, p {
+    margin: 0
+}
+
+/* Page header */
+
+    .page_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid #707070;
+    }
+
+    .nav_list {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .nav_link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(29, 224, 45);
+    }
+
+    .nav_link_stylish {
+        color: rgb(231, 241, 47);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .nav_link:hover {
+        color:rgb(231, 241, 47)
+    }
+
+    .nav_item, .nav_item_stylish {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_item_stylish {
+        border: 1px solid rgb(231, 241, 47);
+        background-color: rgb(29, 224, 45);
+        border-radius: 2px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+
+    .nav_item_stylish:hover {
+        box-shadow: 1px 3px #70707018;
+    }
+
+    .page_logo {
+        width: 150px;
+        height: 60px
+    }
+
+    .hamburger_icon {
+        display: none;
+        color:rgb(29, 224, 45);
+        font-size: 24px;
+        cursor: pointer
+    }
+
+    /* Swiper */
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+        }
+
+        .swiper_image {
+            object-fit: fill;
+            width: 100%;
+            height: 500px;
+        }
+    /* End of Swiper */
+
+/* End of Page header */
+
+/* Page footer */
+
+    .page_footer {
+        width: 100%;
+        height: 300px;
+        border-top: 1px solid #707070;
+        box-sizing: border-box;
+        display: flex;
+        padding: 70px 50px 0;
+        justify-content: space-between;
+        gap: 20px;
+        color: #707070;
+        box-sizing: border-box;
+    }
+
+    .footer_logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .footer_about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer_about_text {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .footer_contact_data {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contact_data_item {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .contact_data_text {
+        font-size: 14px;
+        width: auto;
+        max-width: 150px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_link_title {
+        margin-bottom: 10px;
+    }
+
+    .flt_plus {
+        margin-bottom: 25px;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer_link {
+        text-decoration: none;
+        font-size: 14px;
+        color: #707070;
+    }
+
+/* End of Page footer */
+
+/* Officials */
+
+    .officials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        border-top: 1px solid #707070;
+        height: 50px;
+        font-weight: 500;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(231, 241, 47);
+        color: #363434
+    }
+
+    .officials_link {
+        text-decoration: none;
+        color: #363434
+    }
+
+    .officials_link:hover {
+        color: tomato
+    }
+
+/* End of Officials */
+
+/* Smaller devices */
+
+    @media screen and (max-width: 991px) {
+        .swiper {
+            height: 400px;
+        }
+
+        .swiper_image {
+            height: 400px;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        .footer_about_text {
+            width: 200px
+        }
+    }
+    
+    @media screen and (max-width: 860px) {
+        .footer_logo {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .page_footer {
+            display: grid;
+            grid-template-columns: auto auto;
+            height: auto;
+            padding: 40px 120px;
+        }
+
+        .footer_links, .footer_about {
+            align-items: center;
+        }
+
+        .footer_link_title, .footer_about_text {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 745px) {
+        .page_header {
+            padding: 0 25px;
+        }
+    }
+    
+    @media screen and (max-width: 690px) {
+        .nav_list {
+            display: none;
+        }
+
+        .hamburger_icon {
+            display: block;
+        }
+
+    }
+
+    @media screen and (max-width: 680px) {
+        .page_footer {
+            padding: 40px;
+        }
+        
+        .footer_about_text {
+            width: auto;
+        }
+    }
+    
+    @media screen and (max-width: 650px) {
+        .swiper {
+            height: 500px;
+        }
+    
+        .swiper_image {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .page_footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .footer_contact_data {
+            align-items: center;
+        }
+
+        .contact_data_text {
+            max-width: 260px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        .contact_data_text {
+            max-width: 150px;
+        }
+    }
